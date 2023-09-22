@@ -1,0 +1,137 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  padding: 30px;
+}
+
+.content-card {
+  background: linear-gradient(to right, #f9f9f9, #fff); /* subtle gradient */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.search-box::before {  /* search icon */
+  content: "\1F50D";  /* Unicode for the search symbol */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #aaa;
+}
+
+.search-box input {
+  padding-left: 40px;  /* space for the search icon */
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #f5f5f5;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9; /* striped rows */
+}
+
+.book-title-link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-book-button {
+  text-align: center;
+  margin-top: 20px;  /* increased space */
+  display: flex;
+  justify-content: center;
+}
+
+.add-book-button button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.add-book-button button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Common styles for both buttons */
+.edit-button, .delete-button {
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Edit Button Styles with Blue Tones and Lighter Colors */
+.edit-button {
+  background: linear-gradient(45deg, #4DC3FF, #2196F3);  /* Transition from light blue to medium blue */
+}
+
+.edit-button:hover {
+  background: linear-gradient(45deg, #2196F3, #1976D2);  /* Transition from medium blue to deeper blue */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);  /* Slight lift effect */
+}
+
+/* Delete Button Styles with Lighter Colors */
+.delete-button {
+  background: linear-gradient(45deg, #FF8E8E, #FF6B6B);  /* Transition from light coral to light red */
+}
+
+.delete-button:hover {
+  background: linear-gradient(45deg, #FF6B6B, #FF5252);  /* Transition from light red to medium red */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);  /* Slight lift effect */
+}
+
+.search-box span[matPrefix] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box i.fas.fa-search, .search-box svg {
+  font-size: 18px;
+  color: #aaa;
+}
+
