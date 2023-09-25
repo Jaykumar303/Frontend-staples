@@ -1,3 +1,5 @@
+/* src/app/components/header/header.component.css */
+
 .custom-header {
   background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   color: white;
@@ -20,4 +22,12 @@
 
 .custom-header a:hover {
   color: lightgray; 
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logout-button {
+  margin-left: auto;
 }

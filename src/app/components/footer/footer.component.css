@@ -1,28 +1,39 @@
-/* footer.component.css */
 .footer-container {
-    background-color: #f5f5f5;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    border-top: 1px solid #d1d1d1;
+    padding: 10px 25px;
 }
 
-
-body {
-    margin-bottom: 60px;  /* Adjust according to the height of your footer */
+.left-section,
+.center-section,
+.right-section {
+    display: inline-block;
 }
+
 .custom-footer {
-    background-color: #3F51B5;  /* Using a shade of blue from Material Design */
-    color: #ffffff;  /* White text for better contrast */
+    background-color: #3F51B5;
+    color: #ffffff;
     font-size: 15px;
-    padding: 15px 25px;
     position: absolute;
     bottom: 0;
     width: 100%;
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
-    justify-content: center; /* Centers the content horizontally */
-  }
-  
-  
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+mat-icon {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+}

@@ -11,7 +11,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./book-form.component.css']
 })
 export class BookFormComponent implements OnInit, OnChanges{
-  @Input() book: any | null = null; // This will accept a book for editing, initialized to null
+  @Input() book: any | null = null; 
   @Output() formSubmit: EventEmitter<any> = new EventEmitter();
 
   bookForm: FormGroup;
@@ -25,7 +25,7 @@ export class BookFormComponent implements OnInit, OnChanges{
       year: ['', [Validators.required, Validators.pattern('^[0-9]{4}$')]]
   });
   
-    // If there's book data provided, populate the form
+    // populate the form
     if (this.data && this.data.book) {
       this.bookForm.patchValue(this.data.book);
     }
@@ -45,11 +45,9 @@ export class BookFormComponent implements OnInit, OnChanges{
   
   onSubmit(): void {
     if (this.bookForm.valid) {
-      // Emit the form data for the parent component to process
-      this.formSubmit.emit(this.bookForm.value);
       
-      this.dialogRef.close();
-      // Reset the form after submission
+      this.formSubmit.emit(this.bookForm.value); 
+      this.dialogRef.close(); 
       this.bookForm.reset();
     }
   }

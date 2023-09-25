@@ -35,6 +35,23 @@ mat-form-field {
 tr.mat-row:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.green-snackbar {
+  background-color: green !important;
+  color: white !important;
+}
 
+.error-snackbar {
+  background-color: red !important;
+  color: white !important;
+}
 
-  
+.mat-snack-bar-success {
+  background-color: #28a745 !important;
+  color: #ffffff !important;
+}
+
+.mat-snack-bar-error {
+  background-color: #dc3545 !important;
+  color: #ffffff !important;
+}
+
